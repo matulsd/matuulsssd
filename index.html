@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mensaje Interactivo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+        }
+        #message {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+        button {
+            font-size: 18px;
+            padding: 10px 20px;
+            cursor: pointer;
+        }
+        .highlight {
+            color: red;
+            font-size: 36px;
+        }
+    </style>
+</head>
+<body>
+    <div id="message">Presiona aquí</div>
+    <button onclick="changeMessage()">Presionar</button>
+
+    <script>
+        function changeMessage() {
+            document.getElementById('message').textContent = "Te amo";
+            document.getElementById('message').classList.add('highlight');
+        }
+    </script>
+</body>
+</html>
